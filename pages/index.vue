@@ -1,9 +1,17 @@
 <template>
-  <Tutorial/>
+  <v-app>
+    <Home/>
+    <Frase/>
+    <Lugar/>
+  </v-app>
 </template>
-
 <script>
+import Home from '../components/Home.vue';
+import Lugar from '../components/Lugar.vue';
+import Frase from '../components/Frase.vue';
+
 export default {
-  name: 'IndexPage'
+    name: "IndexPage",
+    components: { Home, Lugar, Frase }
 }
 </script>
