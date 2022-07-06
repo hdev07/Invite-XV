@@ -1,15 +1,22 @@
-export default {
+require('dotenv').config()
+module.exports = {
+  mode: 'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'misxvsofi',
+    title: 'Mis XV Años Sofi',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Ven a festejar mis XV en compañia de mis seres queridos' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'msapplication-TileColor', content: '#00C4B3' },
+      {
+        name: 'msapplication-TileImage',
+        content: './static/favicon.ico'
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
