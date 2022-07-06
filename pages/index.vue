@@ -1,9 +1,9 @@
 <template>
-  <v-app>
+  <div>
     <Home/>
     <Frase/>
     <Lugar/>
-  </v-app>
+  </div>
 </template>
 <script>
 import Home from '../components/Home.vue';

@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt2',
+    title: 'misxvsofi',
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,12 +15,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@500&display=swap" 
       },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Rubik+Moonrocks&display=swap" 
-      }
     ],
   },
 

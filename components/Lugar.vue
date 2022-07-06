@@ -12,7 +12,7 @@
             src="https://picsum.photos/600/300"
             alt=""
           />
-          <p class="mb-2 text-1xl text-uppercase">Parroquia san francisco</p>
+          <p class="mb-2 text-1xl uppercase">Parroquia san francisco</p>
         </div>
         <div class="flex text-justify">
           <p class="font-bold">Cuándo:&nbsp;</p>
@@ -138,7 +138,7 @@
             src="https://picsum.photos/601/300"
             alt=""
           />
-          <p class="mb-2 text-1xl text-uppercase">Salón Benevento</p>
+          <p class="mb-2 text-1xl uppercase">Salón Benevento</p>
         </div>
         <div class="flex text-justify">
           <p class="font-bold">Cuándo:&nbsp;</p>

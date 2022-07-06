@@ -1,29 +1,30 @@
 <template>
   <div id="home" class="h-screen w-screen bg-img flex justify-center">
     <div class="z-10 top-96 absolute p-4 mt-8">
-      <p class="text-4xl text-center text-white m-4 mb-12 font-bold text-uppercase">
+      <p class="text-4xl text-center text-white m-4 mb-12 font-bold uppercase">
         Sofía
       </p>
-      <p class="text-5xl text-center text-white">Mis XV Años</p>
-      <p v-if="message === true">¡YA EMPEZÓ!</p>
+      <p class="text-6xl text-center text-white">Mis XV Años</p>
+      <p v-if="message === true" class="text-6xl text-center text-white">¡YA EMPEZÓ!</p>
       <div v-else class="grid-cols-4 flex justify-center">
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-2xl">{{ remainDays }}</p>
-          <p class="text-center text-white text-1xl">Dias</p>
+          <p class="text-center text-white text-3xl">{{ remainDays }}</p>
+          <p class="text-center text-white text-2xl">Dias</p>
         </div>
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-2xl">{{ remainHours }}</p>
-          <p class="text-center text-white text-1xl">Horas</p>
+          <p class="text-center text-white text-3xl">{{ remainHours }}</p>
+          <p class="text-center text-white text-2xl">Horas</p>
         </div>
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-2xl">{{ remainMinutes }}</p>
-          <p class="text-center text-white text-1xl">Minutos</p>
+          <p class="text-center text-white text-3xl">{{ remainMinutes }}</p>
+          <p class="text-center text-white text-2xl">Minutos</p>
         </div>
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-2xl">{{ remainSeconds }}</p>
-          <p class="text-center text-white text-1xl">Segundos</p>
+          <p class="text-center text-white text-3xl">{{ remainSeconds }}</p>
+          <p class="text-center text-white text-2xl">Segundos</p>
         </div>
       </div>
+      
     </div>
   </div>
 </template>
