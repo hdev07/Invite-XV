@@ -33,8 +33,7 @@ module.exports = {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [{ src: "./plugins/google-maps.js", ssr: true }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -45,6 +44,10 @@ module.exports = {
     '@nuxtjs/tailwindcss',
   ],
 
+  env: {
+    GOOGLE_MAP_API: process.env.GOOGLE_MAP_API || 'YOUR_API_KEY',
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/tailwindcss'
@@ -52,5 +55,6 @@ module.exports = {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: [/^vue2-google-maps($|\/)/]
   }
 }
