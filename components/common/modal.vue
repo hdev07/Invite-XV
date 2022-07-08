@@ -62,7 +62,7 @@
   </div>
 </template>
 <script>
-import Map from "./Map.vue";
+import Map from "./Map";
 export default {
   components: { Map },
   props: {
