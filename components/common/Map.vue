@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full pb-4">
     <div>
-      <GmapMap :center="center" :zoom="15" class="h-48">
+      <GmapMap :center="mapCenter" :zoom="15" :options="mapConfig" class="h-48">
         <GmapInfoWindow
           :options="infoOptions"
           :position="infoWindowPos"
@@ -14,6 +14,7 @@
           v-for="(m, i) in markers"
           :position="m.position"
           :clickable="true"
+          :icon="markerOptions"
           @click="toggleInfoWindow(m, i)"
         ></GmapMarker>
       </GmapMap>
@@ -25,16 +26,12 @@
 export default {
   data() {
     return {
-      center: {
-        lat: 47.376332,
-        lng: 8.547511,
-      },
+      mapCenter: { lat: 47.376332, lng: 8.547511 },
       infoWindowPos: null,
       infoWinOpen: false,
       currentMidx: null,
       infoOptions: {
         content: "",
-        //optional: offset infowindow so it visually sits nicely on top of our marker
         pixelOffset: {
           width: 0,
           height: -35,
@@ -46,24 +43,26 @@ export default {
             lat: 47.376332,
             lng: 8.547511,
           },
-          infoText: "<strong>Marker 1</strong>",
-        },
-        {
-          position: {
-            lat: 47.374592,
-            lng: 8.548867,
-          },
-          infoText: "<strong>Marker 2</strong>",
-        },
-        {
-          position: {
-            lat: 47.379592,
-            lng: 8.549867,
-          },
-          infoText: "<strong>Marker 3</strong>",
+          infoText: "<strong>TQM Jaque bb</strong>",
         },
       ],
     };
+  },
+
+  computed: {
+    mapConfig() {
+      return {
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: false,
+      };
+    },
+    markerOptions() {
+      return {
+        url: require("../../assets/icons/marker.png"),
+        scaledSize: { width: 37, height: 50, f: "px", b: "px" },
+      };
+    },
   },
 
   methods: {

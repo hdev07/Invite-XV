@@ -56,7 +56,7 @@
         </button>
       </div>
     </a>
-    <Modal :title="titleModal" :desc-modal="desc" :modal="defaultModal" />
+    <Modal :title="titleModal" :desc-modal="desc" :modal="defaultModal" @modal="showModal"/>
   </div>
 </template>
 

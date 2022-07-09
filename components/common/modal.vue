@@ -73,7 +73,7 @@ export default {
 
   methods: {
     showModal() {
-      this.modal = !this.modal;
+      this.$emit("modal");
     },
   },
 };
