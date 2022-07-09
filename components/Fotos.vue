@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-center my-4">
+    <div class="flex justify-center my-4 py-8">
       <p class="text-center font-bold text-4xl">Fotos</p>
     </div>
     <div class="relative slide">
