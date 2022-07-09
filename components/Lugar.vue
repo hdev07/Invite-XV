@@ -8,12 +8,14 @@
       :urlImg="urlImgCeremonia"
       :desc="descCeremonia"
       :title-modal="'Ubicación'"
+      :marker="markerCeremonia"
     />
     <Card
       :title="'Recepción'"
       :urlImg="urlImgReception"
       :desc="descReception"
       :title-modal="'Ubicación'"
+      :marker="markerRecepcion"
     />
   </div>
 </template>
@@ -38,8 +40,26 @@ export default {
           "Km 2.1, Blvrd Ramón G. Bonfil, Zona Plateada, Pachuca de Soto, Hgo.",
       },
       urlImgReception: "https://picsum.photos/600/301",
+      markerCeremonia: {
+        id: 1,
+        position: {
+          lat: 20.121039,
+          lng: -98.731211,
+        },
+      },
+      markerRecepcion: {
+        id: 1,
+        position: {
+          lat: 20.096749,
+          lng: -98.78433,
+        },
+      },
     };
   },
-  methods: {},
+  methods: {
+    infoTextCeremonia(descCeremonia, markerCeremonia) {
+      return;
+    },
+  },
 };
 </script>

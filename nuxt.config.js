@@ -3,14 +3,14 @@ module.exports = {
   mode: 'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Mis XV Años Sofi',
+    title: 'Mis XV Años Sofia',
     htmlAttrs: {
       lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Ven a festejar mis XV en compañia de mis seres queridos' },
+      { hid: 'description', name: 'description', content: 'Te invito a festejar mis XV en compañia de mis seres queridos' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#00C4B3' },
       {

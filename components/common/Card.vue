@@ -56,18 +56,26 @@
         </button>
       </div>
     </a>
-    <Modal :title="titleModal" :desc-modal="desc" :modal="defaultModal" @modal="showModal"/>
+    <Modal
+      :title="titleModal"
+      :desc-modal="desc"
+      :modal="defaultModal"
+      :marker="marker"
+      @modal="showModal"
+    />
   </div>
 </template>
 
 <script>
 import Modal from "./Modal";
 export default {
+  components: { Modal },
   props: {
     title: { type: String, required: true },
     urlImg: { type: String, required: true },
     desc: { type: Object, required: true },
     titleModal: { type: String, required: true },
+    marker: { type: Object, required: true },
   },
   data() {
     return {
@@ -77,8 +85,34 @@ export default {
   methods: {
     showModal() {
       this.defaultModal = !this.defaultModal;
+      if (this.defaultModal === true) {
+        this.pushElement(this.marker);
+      }
+    },
+
+    pushElement() {
+      const lat = this.marker.position.lat;
+      const lng = this.marker.position.lng;
+
+      this.marker["infoText"] = `
+        <div class="w-full flex flex-wrap">
+          <div class="w-full flex border-b border-purple mb-4 pb-1">
+            <p class="w-full truncate font-semibold flex items-center">
+            ${this.desc ? this.desc.placeName : "null"}</p>
+          </div>
+          <div class="w-full flex flex-wrap">
+            <div class="w-full">
+              <a href="https://www.google.com/maps/search/?api=1&query=${lat},${lng}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-blue"
+              >Ir A
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
     },
   },
-  components: { Modal },
 };
 </script>

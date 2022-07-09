@@ -30,7 +30,7 @@
         <div class="p-6 space-y-6">
           <div class="w-full mb-4">
             <client-only>
-              <Map />
+              <Map :marker="marker"/>
             </client-only>
           </div>
           <div class="flex text-justify">
@@ -69,6 +69,7 @@ export default {
     title: { type: String, required: true },
     descModal: { type: Object, default: {} },
     modal: { type: Boolean, required: true },
+    marker: { type: Object, required: true }
   },
 
   methods: {
