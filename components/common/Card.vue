@@ -96,17 +96,18 @@ export default {
 
       this.marker["infoText"] = `
         <div class="w-full flex flex-wrap">
-          <div class="w-full flex border-b border-purple mb-4 pb-1">
-            <p class="w-full truncate font-semibold flex items-center">
+          <div class="w-full flex border-b mb-4 pb-1">
+            <p class="w-full font-semibold flex items-center">
             ${this.desc ? this.desc.placeName : "null"}</p>
           </div>
+          <p class="w-full">${this.desc ? this.desc.placeDirection : "null"}</p>
           <div class="w-full flex flex-wrap">
             <div class="w-full">
               <a href="https://www.google.com/maps/search/?api=1&query=${lat},${lng}"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="underline text-blue"
-              >Ir A
+              >Obtener Indicaciones
               </a>
             </div>
           </div>

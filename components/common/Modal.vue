@@ -30,7 +30,7 @@
         <div class="p-6 space-y-6">
           <div class="w-full mb-4">
             <client-only>
-              <Map :marker="marker"/>
+              <Map :marker="marker" />
             </client-only>
           </div>
           <div class="flex text-justify">
@@ -49,6 +49,12 @@
         <div
           class="flex justify-end items-center p-6 space-x-2 rounded-b border-t border-gray-200"
         >
+          <button
+            type="button"
+            class="w-full flex justify-center text-center bg-white hover:bg-gray-100 border border-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+          >
+            <a :href="goTo()" target="_blank" rel="noopener noreferrer">Indicaciones</a>
+          </button>
           <button
             @click="showModal"
             type="button"
@@ -69,12 +75,15 @@ export default {
     title: { type: String, required: true },
     descModal: { type: Object, default: {} },
     modal: { type: Boolean, required: true },
-    marker: { type: Object, required: true }
+    marker: { type: Object, required: true },
   },
 
   methods: {
     showModal() {
       this.$emit("modal");
+    },
+    goTo() {
+      return `https://www.google.com/maps/search/?api=1&query=${this.marker.position.lat},${this.marker.position.lng}`;
     },
   },
 };
