@@ -28,30 +28,30 @@ export default {
     return {
       defaultModal: false,
       descCeremonia: {
-        placeName: "Parroquia san francisco",
-        when: "3 de diciembre del 2022 a las 18:00 hrs.",
-        placeDirection: "Mariano Arista 200, San Francisco, 42000 Pachuca de Soto, Hgo.",
+        placeName: "Parroquia la Asunción",
+        when: "3 de diciembre del 2022 a las 17:45 hrs.",
+        placeDirection:
+          "Constitución 97A, Capulin Soledad, 53720 Naucalpan de Juárez, Méx.",
       },
-      urlImgCeremonia: "https://picsum.photos/600/300",
+      urlImgCeremonia: require("../assets/img/Iglesia.png"),
       descReception: {
         placeName: "Salón Benevento",
-        when: "3 de diciembre del 2022 a las 20:00 hrs",
-        placeDirection:
-          "Km 2.1, Blvrd Ramón G. Bonfil, Zona Plateada, Pachuca de Soto, Hgo.",
+        when: "3 de diciembre del 2022 a las 19:00 hrs",
+        placeDirection: "120 Av. de la Tolva Naucalpan de Juárez, Estado de México",
       },
-      urlImgReception: "https://picsum.photos/600/301",
+      urlImgReception: require("../assets/img/Salon.jpg"),
       markerCeremonia: {
         id: 1,
         position: {
-          lat: 20.121039,
-          lng: -98.731211,
+          lat: 19.4481349,
+          lng: -99.2539861,
         },
       },
       markerRecepcion: {
         id: 1,
         position: {
-          lat: 20.096749,
-          lng: -98.78433,
+          lat: 19.4502913,
+          lng: -99.2522322,
         },
       },
     };
