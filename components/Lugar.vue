@@ -35,7 +35,7 @@ export default {
       },
       urlImgCeremonia: require("../assets/img/Iglesia.png"),
       descReception: {
-        placeName: "Salón Benevento",
+        placeName: "Salón de las Bugambilias",
         when: "3 de diciembre del 2022 a las 19:00 hrs",
         placeDirection: "120 Av. de la Tolva Naucalpan de Juárez, Estado de México",
       },
