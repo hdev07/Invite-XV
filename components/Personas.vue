@@ -27,24 +27,14 @@ export default {
     return {
       people: [
         {
-          name: "Betty",
-          relationship: "Madre",
-          img: require("../assets/img/Persona_1.jpg"),
+          name: "Betty & Héctor",
+          relationship: "Padres",
+          img: require("../assets/img/Padres.jpg"),
         },
         {
-          name: "Héctor",
-          relationship: "Padre",
-          img: require("../assets/img/Persona_2.jpg"),
-        },
-        {
-          name: "Carmen",
-          relationship: "Madrina",
-          img: require("../assets/img/Persona_3.jpg"),
-        },
-        {
-          name: "Alfonso",
-          relationship: "Padrino",
-          img: require("../assets/img/Persona_4.jpg"),
+          name: "Carmen & Alfonso",
+          relationship: "Padrinos",
+          img: require("../assets/img/Padrinos.jpg"),
         },
       ],
     };

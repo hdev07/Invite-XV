@@ -16,13 +16,27 @@
   background-size: cover;
 }
 
+.bg-img-final {
+  background-image: url("../img/Final.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-img-hashtag {
+  background-image: url("../img/instagram.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   /* font-family: 'Rubik Moonrocks', cursive; */
   font-family: 'Josefin Slab', serif;
 }
 
-#home p{
-  font-family: 'Dancing Script', cursive;
+.cursive {
+  font-family: 'Dancing Script', cursive !important;
 }
 
 /* Scrollbar custom */

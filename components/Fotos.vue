@@ -5,9 +5,9 @@
     </div>
     <div class="relative slide">
       <div
-        class="carousel-indicators absolute bottom-0 flex bg-yellow-100 h-24 w-full justify-center items-center"
+        class="carousel-indicators absolute bottom-0 flex h-24 w-full justify-center items-center hidden"
       >
-        <ol class="z-50 flex w-4/12 justify-center">
+        <ol class="flex w-4/12 justify-center">
           <li
             v-for="(img, i) in images"
             :key="i"
@@ -33,11 +33,9 @@
 export default {
   data: () => ({
     images: [
-      require("../assets/img/Foto_1.jpg"),
       require("../assets/img/Foto_2.jpg"),
       require("../assets/img/Foto_3.jpg"),
       require("../assets/img/Foto_4.jpg"),
-      require("../assets/img/Foto_5.jpg"),
     ],
     active: 0,
   }),

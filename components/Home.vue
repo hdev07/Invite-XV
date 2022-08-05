@@ -1,30 +1,31 @@
 <template>
   <div id="home" class="h-screen w-screen bg-img flex justify-center">
     <div class="z-10 top-96 absolute p-4 mt-8">
-      <p class="text-4xl text-center text-white m-4 mb-12 font-bold uppercase">
+      <p
+        class="cursive text-4xl text-center text-white m-4 mb-12 font-bold uppercase cursive"
+      >
         Sofía
       </p>
-      <p class="text-6xl text-center text-white">Mis XV Años</p>
+      <p class="cursive text-6xl text-center text-white">Mis XV Años</p>
       <p v-if="message === true" class="text-6xl text-center text-white">¡YA EMPEZÓ!</p>
       <div v-else class="grid-cols-4 flex justify-center">
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-3xl">{{ remainDays }}</p>
-          <p class="text-center text-white text-2xl">Dias</p>
+          <p class="cursive text-center text-white text-3xl">{{ remainDays }}</p>
+          <p class="cursive text-center text-white text-2xl">Dias</p>
         </div>
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-3xl">{{ remainHours }}</p>
-          <p class="text-center text-white text-2xl">Horas</p>
+          <p class="cursive text-center text-white text-3xl">{{ remainHours }}</p>
+          <p class="cursive text-center text-white text-2xl">Horas</p>
         </div>
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-3xl">{{ remainMinutes }}</p>
-          <p class="text-center text-white text-2xl">Minutos</p>
+          <p class="cursive text-center text-white text-3xl">{{ remainMinutes }}</p>
+          <p class="cursive text-center text-white text-2xl">Minutos</p>
         </div>
         <div class="px-2 pt-8">
-          <p class="text-center text-white text-3xl">{{ remainSeconds }}</p>
-          <p class="text-center text-white text-2xl">Segundos</p>
+          <p class="cursive text-center text-white text-3xl">{{ remainSeconds }}</p>
+          <p class="cursive text-center text-white text-2xl">Segundos</p>
         </div>
       </div>
-      
     </div>
   </div>
 </template>
@@ -51,10 +52,8 @@ export default {
       this.remainMinutes = ("0" + Math.floor((this.remainTime / 60) % 60)).slice(-2);
       this.remainHours = ("0" + Math.floor((this.remainTime / 3600) % 24)).slice(-2);
       this.remainDays = Math.floor(this.remainTime / (3600 * 24));
-
       const timerUpdate = setInterval(() => {
         this.getDate(deadline);
-
         if (this.remainTime <= 1) {
           clearInterval(timerUpdate);
           this.message = true;

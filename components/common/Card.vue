@@ -52,7 +52,9 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-          Agregar al calendario
+          <a target="_blank" :href="desc ? desc.urlCalendar : 'Error'">
+            Agregar al calendario
+          </a>
         </button>
       </div>
     </a>
