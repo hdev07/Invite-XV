@@ -33,9 +33,9 @@
 export default {
   data: () => ({
     images: [
+      require("../assets/img/Foto_1.jpg"),
       require("../assets/img/Foto_2.jpg"),
       require("../assets/img/Foto_3.jpg"),
-      require("../assets/img/Foto_4.jpg"),
     ],
     active: 0,
   }),
