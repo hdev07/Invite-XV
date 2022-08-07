@@ -30,6 +30,13 @@
   background-size: cover;
 }
 
+.bg-img-invitacion {
+  background-image: url("../img/Invitacion.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   /* font-family: 'Rubik Moonrocks', cursive; */
   font-family: 'Josefin Slab', serif;

@@ -60,10 +60,6 @@ export default {
       },
     };
   },
-  methods: {
-    infoTextCeremonia(descCeremonia, markerCeremonia) {
-      return;
-    },
-  },
+  methods: {},
 };
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <Home />
+    <Msg />
     <Frase />
     <Lugar />
     <Fotos />
@@ -17,9 +18,10 @@ import Fotos from "../components/Fotos.vue";
 import Personas from "../components/Personas.vue";
 import Insta from "../components/Insta.vue";
 import Final from "../components/Final.vue";
+import Msg from "../components/Msg.vue";
 
 export default {
   name: "IndexPage",
-  components: { Home, Lugar, Frase, Fotos, Personas, Insta, Final },
+  components: { Home, Lugar, Frase, Fotos, Personas, Insta, Final, Msg },
 };
 </script>

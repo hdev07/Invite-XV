@@ -45,6 +45,7 @@ export default {
     this.getDate("Dec 3 2022 18:00:00 GMT-0600");
   },
   methods: {
+    // A function that calculates the time remaining to the date passed as a parameter.
     getDate(deadline) {
       let now = new Date();
       this.remainTime = (new Date(deadline) - now + 1000) / 1000;
