@@ -3,7 +3,7 @@
     <div class="z-10 mt-80">
       <div class="mt-72">
         <p class="cursive text-4xl text-center text-white m-4 mb-4 font-bold uppercase">
-          Sofía
+          Sofia
         </p>
         <p class="cursive text-2xl text-center text-white m-2 font-bold">
           Celebremos juntos este día especial!

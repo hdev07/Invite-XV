@@ -4,7 +4,7 @@
       <p
         class="cursive text-4xl text-center text-white m-4 mb-12 font-bold uppercase cursive"
       >
-        Sofía
+        Sofia
       </p>
       <p class="cursive text-6xl text-center text-white">Mis XV Años</p>
       <p v-if="message === true" class="text-6xl text-center text-white">¡YA EMPEZÓ!</p>

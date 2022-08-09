@@ -3,7 +3,7 @@
     <div class="h-64 w-screen bg-img-hashtag">
       <div class="">
         <p class="text-1xl text-center text-white pt-4 px-4">
-          "Como Sabemos cuan importantes son las fotos, queremos recordarlos siempre, asi
+          "Como Sabemos cuan importantes son las fotos, queremos recordarlas siempre, asi
           que hemos creado este hashtag para que lo uses en el evento"
         </p>
         <p class="text-3xl text-center text-white pt-8 cursive">#MisXVSofi</p>

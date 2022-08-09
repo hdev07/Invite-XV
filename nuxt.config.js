@@ -10,7 +10,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Te invito a festejar mis XV. \n Espero contar con tu presencia en\nese día tan especial para mí y mis padres.' },
+      { hid: 'description', name: 'description', content: 'Te invito a festejar mis XV. Espero contar con tu presencia en ese día tan especial para mí y mis padres.' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#00C4B3' },
       {
@@ -50,7 +50,7 @@ module.exports = {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/tailwindcss', '@nuxtjs/axios'
+    '@nuxtjs/tailwindcss'
   ],
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
