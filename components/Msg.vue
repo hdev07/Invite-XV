@@ -16,7 +16,7 @@
           <img
             :src="info ? info[0].urlCode : ''"
             alt=""
-            class="w-24 absolute -bottom-16 right-2"
+            class="w-24 absolute -bottom-16 right-2 rounder-2 rounded-lg opacity-75"
           />
         </div>
       </div>
