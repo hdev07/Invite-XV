@@ -2,11 +2,11 @@
   <div>
     <div class="h-screen w-full vx-row justify-center">
       <div class="w-full">
-        <img src="../assets/img/Logo.png" alt="Logo" class="p-6 flex" />
+        <img src="../assets/img/Logo.png" alt="Logo" class="w-18 p-6 flex" />
       </div>
-      <section class="text-center">
+      <section class="text-center mt-8">
         <div class="max-w-auto mx-auto">
-          <div class="mx-auto">
+          <div class="mx-auto w-1/3">
             <svg
               class="fill-current text-gray-300"
               viewBox="0 0 445 202"
@@ -18,8 +18,10 @@
               />
             </svg>
           </div>
-          <h2 class="mt-8 uppercase text-xl font-black">We are sorry, Page not found!</h2>
-          <p class="mt-6 uppercase text-sm text-gray-900">
+          <h2 class="mt-16 uppercase text-3xl font-black">
+            We are sorry, Page not found!
+          </h2>
+          <p class="mt-6 uppercase text-1xl text-gray-900">
             The page you are looking for might have been removed had its name changed or
             is temporarily unavailable.
           </p>
