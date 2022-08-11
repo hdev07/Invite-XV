@@ -1,7 +1,7 @@
 <template>
   <div v-if="family !== undefined">
     <div class="h-64 w-screen bg-img-invitacion">
-      <div class="flex justify-between mx-4">
+      <div class="flex justify-around mx-4">
         <div class="flex align-center">
           <div class="mt-12 pt-2">
             <p class="cursive text-3xl text-center font-bold cursive">
@@ -15,8 +15,8 @@
         <div class="flex pb-4 w-1/3 relative">
           <img
             :src="family ? family.urlCode : ''"
-            alt=""
-            class="w-24 absolute -bottom-16 right-2 rounder-2 rounded-lg opacity-75"
+            alt="QRCODE"
+            class="w-28 absolute -bottom-20 -right-8 rounder-2 rounded-lg opacity-75"
           />
         </div>
       </div>
@@ -77,6 +77,38 @@ export default {
           ticket: 8,
           urlCode:
             "https://api.qrcode-monkey.com/tmp/e94c02898d16a753973b5867ecb5bd98.svg",
+        },
+        {
+          // Matlalciatzi del Angel - 5
+          id: "MA",
+          name: "Matlalciatzi del Angel",
+          ticket: 5,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/1c1e1e79b018d430706ad4995286f1db.svg",
+        },
+        {
+          // Hurtado Tovar - 2
+          id: "HT",
+          name: "Hurtado Tovar",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/5297521caf521faa43e9b3e8c7041c20.svg",
+        },
+        {
+          // Hurtado Hernández - 2
+          id: "HH",
+          name: "Hurtado Hernández",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/27abb8cea1808824986dc9a3c3a8222e.svg",
+        },
+        {
+          // Hurtado Hernández - 1
+          id: "HH-1",
+          name: "Hurtado Hernández",
+          ticket: 1,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/b42baf21ed72e9dab757af8cc6b64b2e.svg",
         },
       ],
     };
