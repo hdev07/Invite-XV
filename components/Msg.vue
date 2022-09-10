@@ -34,9 +34,9 @@ export default {
           // Matlalcuatzi Solis - 5
           id: "MS",
           name: "Matlalcuatzi Solis",
-          ticket: 4,
+          ticket: 5,
           urlCode:
-            "https://api.qrcode-monkey.com/tmp/77d5478551e9f9d077c60f23998be135.svg",
+            "https://api.qrcode-monkey.com/tmp/2f5bf078226b1543e0db1f7b54974a5e.svg",
         },
         {
           // Lopez Solis - 3
@@ -109,6 +109,127 @@ export default {
           ticket: 1,
           urlCode:
             "https://api.qrcode-monkey.com/tmp/b42baf21ed72e9dab757af8cc6b64b2e.svg",
+        },
+        {
+          // Hurtado Mermejo
+          id: "HM",
+          name: "Hurtado Mermejo",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/815f94c1acba4fe21facb8c610f9b149.svg",
+        },
+        {
+          // Moreno Guzmán
+          id: "MG",
+          name: "Moreno Guzmán",
+          ticket: 4,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/1cbfae686efc77bd6d62aae52ab8513b.svg",
+        },
+        {
+          // Hurtado Negrete
+          id: "HN",
+          name: "Hurtado Negrete",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/386c2bd0e2bd7f8ef94d360b29e8ba39.svg",
+        },
+        {
+          // Hurtado Negrete - 1
+          id: "HN-1",
+          name: "Hurtado Negrete",
+          ticket: 1,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/17fe07a263b49c293334c1186aba409b.svg",
+        },
+        {
+          // Hurtado Negrete - 2
+          id: "HN-2",
+          name: "Hurtado Negrete",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/386c2bd0e2bd7f8ef94d360b29e8ba39.svg",
+        },
+        {
+          // Hurtado Navarro
+          id: "HN-3",
+          name: "Hurtado Navarro",
+          ticket: 4,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/0a5bbaa589c8b4a913cf0a60efbcc8e5.svg",
+        },
+        {
+          // Barrón Hurtado
+          id: "BH",
+          name: "Barrón Hurtado",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/cedfba39c48a62dea533a720c6464e6c.svg",
+        },
+        {
+          // Barrón Hurtado - 1
+          id: "BH-1",
+          name: "Barrón Hurtado",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/cedfba39c48a62dea533a720c6464e6c.svg",
+        },
+        {
+          // Barrón Hurtado - 2
+          id: "BH-2",
+          name: "Barrón Hurtado",
+          ticket: 1,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/67285ce9f0610a814beaff4144cda3df.svg",
+        },
+
+        {
+          // Chavez Barron
+          id: "CB",
+          name: "Chávez Barrón ",
+          ticket: 4,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/93785af0860b1acfced7cf5fd69ae719.svg",
+        },
+        {
+          // Celis Albarrán
+          id: "CA",
+          name: "Celis Albarrán",
+          ticket: 4,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/659dbe632da2de3d2b6f44c0f154aa0c.svg",
+        },
+        {
+          // López Lara
+          id: "LL",
+          name: "López Lara",
+          ticket: 2,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/d464a62a03c6b55a044c6e1ddcdd3acf.svg",
+        },
+        {
+          // Familia Carrillo
+          id: "FC",
+          name: "Familia Carrillo",
+          ticket: 1,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/523a6e45318b883b271df241371ed4ea.svg",
+        },
+        {
+          // Amigos
+          id: "AMG",
+          name: "Amigo",
+          ticket: 1,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/aacdaf2dde253a277fdaf974a999cc2d.svg",
+        },
+        {
+          // Rodríguez Hernández
+          id: "RH",
+          name: "Rodríguez Hernández",
+          ticket: 5,
+          urlCode:
+            "https://api.qrcode-monkey.com/tmp/c3ba181ee44c7b736c12657ab41c0de5.svg",
         },
       ],
     };
