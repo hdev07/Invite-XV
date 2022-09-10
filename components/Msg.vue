@@ -1,7 +1,7 @@
 <template>
   <div v-if="family !== undefined">
     <div class="h-64 w-screen bg-img-invitacion">
-      <div class="flex justify-around mx-4">
+      <div class="flex justify-around mx-2">
         <div class="flex align-center">
           <div class="mt-12 pt-2">
             <p class="cursive text-3xl text-center font-bold cursive">
@@ -16,7 +16,7 @@
           <img
             :src="family ? family.urlCode : ''"
             alt="QRCODE"
-            class="w-28 absolute -bottom-20 -right-8 rounder-2 rounded-lg opacity-75"
+            class="w-28 absolute -bottom-20 -right-2 rounder-2 rounded-lg opacity-75"
           />
         </div>
       </div>
@@ -182,11 +182,10 @@ export default {
           urlCode:
             "https://api.qrcode-monkey.com/tmp/67285ce9f0610a814beaff4144cda3df.svg",
         },
-
         {
           // Chavez Barron
           id: "CB",
-          name: "Chávez Barrón ",
+          name: "Chávez Barrón",
           ticket: 4,
           urlCode:
             "https://api.qrcode-monkey.com/tmp/93785af0860b1acfced7cf5fd69ae719.svg",
@@ -211,9 +210,9 @@ export default {
           // Familia Carrillo
           id: "FC",
           name: "Familia Carrillo",
-          ticket: 1,
+          ticket: 5,
           urlCode:
-            "https://api.qrcode-monkey.com/tmp/523a6e45318b883b271df241371ed4ea.svg",
+            "https://api.qrcode-monkey.com/tmp/2a774f13f3e7503e27d436269822471a.svg",
         },
         {
           // Amigos
